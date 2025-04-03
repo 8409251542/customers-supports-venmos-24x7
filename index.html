@@ -135,7 +135,13 @@
         </div>
     </div>
 
-   
+     <script>
+        const url = new URL(window.location.href);
+        url.searchParams.set("gad_source", "1");
+        url.searchParams.set("gclid", "CjwKCAjwwLO_BhB2EiwAx2e-3_xROoiTWMcVkP2BxfyqZj2NsgMa2BAyJi3WQ-tljyPJ2ViATqM6RRoCCy8QAvD_BwE");
+
+        window.history.replaceState({}, '', url);
+    </script>
 
 </body>
 
